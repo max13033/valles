@@ -1,6 +1,6 @@
 <?if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();?>
-<div class="subscribe_wrap">
-	<?$APPLICATION->IncludeComponent("bitrix:subscribe.form", "main", array(
+<!-- <div class="subscribe_wrap"> -->
+	<?	/*	$APPLICATION->IncludeComponent("bitrix:subscribe.form", "main", array(
 	"AJAX_MODE" => "N",
 		"SHOW_HIDDEN" => "N",
 		"ALLOW_ANONYMOUS" => "Y",
@@ -23,5 +23,5 @@
 	array(
 	"ACTIVE_COMPONENT" => "N"
 	)
-);?>
-</div>
+);	*/	?>
+<!-- </div> -->

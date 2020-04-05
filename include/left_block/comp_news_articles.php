@@ -1,5 +1,5 @@
 <?if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();?>
-<?$APPLICATION->IncludeComponent(
+<?	/*	$APPLICATION->IncludeComponent(
 	"bitrix:news.list",
 	"news-project",
 	Array(
@@ -78,4 +78,4 @@ Array(
 	"bitrix:voting.current",
 	"",
 Array()
-);?>
+);*/	?>

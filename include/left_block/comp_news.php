@@ -1,5 +1,5 @@
 <?if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();?>
-<?$APPLICATION->IncludeComponent(
+<?/*	$APPLICATION->IncludeComponent(
 	"bitrix:news.list",
 	"custom-news",
 	Array(
@@ -63,4 +63,4 @@ false,
 Array(
 	'ACTIVE_COMPONENT' => 'N'
 )
-);?>
+);	*/	?>
