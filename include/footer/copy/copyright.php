@@ -1,0 +1,1 @@
+2018 - <?=date("Y")?> &copy; Valles.ru
