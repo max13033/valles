@@ -1,0 +1,216 @@
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)
+Array
+(
+    [PRICE] => 25
+    [CATALOG_GROUP_ID] => 1
+    [CURRENCY] => 
+)

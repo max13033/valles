@@ -1,0 +1,1 @@
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/yakus.yml2/install/catalog_import_src/yml_yakus_run.php");?>
