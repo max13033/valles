@@ -2,7 +2,7 @@
 AddEventHandler("shs.parser", "parserBeforeAddElementCatalog", Array("MyClass", "parserBeforeAddElementCatalogHandler"));
 
 function CountryBlackList(){
-    if (in_array($_SESSION['SESS_COUNTRY_ID'], array('CN'))) {   
+    if (in_array($_SESSION["SESS_COUNTRY_ID"], array("CN", "IT", "SG"))) {   
         die('This site temporary unavailable.');
     } 
 }
