@@ -1,6 +1,13 @@
 <?
 AddEventHandler("shs.parser", "parserBeforeAddElementCatalog", Array("MyClass", "parserBeforeAddElementCatalogHandler"));
 
+function CountryBlackList(){
+    if (in_array($_SESSION['SESS_COUNTRY_ID'], array('CN'))) {   
+        die('This site temporary unavailable.');
+    } 
+}
+AddEventHandler("main", "OnBeforeProlog", "CountryBlackList", "50"); // перед загрузкой сайта проверяет чёрный список стран
+
 class MyClass
 {
     // создаем обработчик события "parserBeforeAddElementCatalogHandler"
@@ -11,20 +18,16 @@ class MyClass
         }
     }
 }
-
 include_once ($_SERVER["DOCUMENT_ROOT"] . "/bitrix/php_interface/functions/Mobile_Detect.php");
 
 global $mobileDetectedIO;
 
 $mobileDetectedIO = new Mobile_Detect();
-
 // circle through init.d dir and init all php files
 foreach (glob(__DIR__ . '/init.d/*.php') as $include) {
     /** @noinspection PhpIncludeInspection */
     include_once $include;
 }
-
-
 AddEventHandler("search", "BeforeIndex", "BeforeIndexHandler");
 function BeforeIndexHandler($arFields) {
     $arrIblock = array(17);
@@ -47,7 +50,6 @@ function BeforeIndexHandler($arFields) {
         return $arFields;
     }
 }
-
 function pre($r){
     echo '<pre>';
         print_r($r);
@@ -55,17 +57,12 @@ function pre($r){
 }
 
 function hasDev(){
-
     global $USER;
-
     if ($USER->IsAuthorized() && $USER->IsAdmin())
-
         return true;
-
     else
         return false;
 }
-
 function pr($r){
     if(hasDev())
         echo '<pre style="color: white">'; print_r($r); echo '</pre>';
@@ -74,14 +71,12 @@ function prd($r){
     echo '<pre>'; print_r($r); echo '</pre>';
     die();
 }
-
 function hasGooAgent(){
     if (strripos($_SERVER['HTTP_USER_AGENT'], 'Chrome-Lighthouse') === false)
         return false;
     else
         return true;
 }
-
 function updatePropSynonyms(){
     CModule::IncludeModule("iblock");
 
@@ -101,11 +96,9 @@ function updatePropSynonyms(){
         }
     }
 }
-
 function getBasketProductByID($productID){
     if (!CModule::IncludeModule("sale"))
         return false;
-
     $arID = array();
     $arBasketItems = array();
     $dbBasketItems = CSaleBasket::GetList(
@@ -129,7 +122,6 @@ function getBasketProductByID($productID){
 
     return false;
 }
-
 $eventManager = \Bitrix\Main\EventManager::getInstance();
 $eventManager->addEventHandler('sale', 'OnBeforeBasketAdd', 'OnBeforeBasketAddHandler');
 function OnBeforeBasketAddHandler($arFields) {
@@ -145,7 +137,6 @@ function OnBeforeBasketAddHandler($arFields) {
         //AddMessage2Log([$_REQUEST, $arFields], 'set_product_id');
     }
 }
-
 function sort_smart_filter($a, $b)
 {
     if ($a['ELEMENT_COUNT'] == $b['ELEMENT_COUNT']) {
@@ -153,27 +144,18 @@ function sort_smart_filter($a, $b)
     }
     return ($a['ELEMENT_COUNT'] > $b['ELEMENT_COUNT']) ? -1 : 1;
 }
-
-
 function enc($n) {
     return SITE_TEMPLATE_PATH.'/include/areas/'.$n.'.php';
 }
-
 function area($tpl, $data=array()) {
-
     global  $APPLICATION;
-
     $file =  enc($tpl);
     $path = $_SERVER['DOCUMENT_ROOT'] . $file;
-
     if(!file_exists( $path)){
-
         $fp = fopen($path, "w");
         fwrite($fp, "File will be auto created");
         fclose($fp);
-
     }
-
     $APPLICATION->IncludeComponent(
         "bitrix:main.include",
         ".default",
@@ -184,13 +166,10 @@ function area($tpl, $data=array()) {
         )
     );
 }
-
-
 function check_mobile_2(){
 
     global $APPLICATION;
     global $USER;
-
     $arAgents = array(
         "iPhone",
         "Android",
@@ -209,7 +188,6 @@ function check_mobile_2(){
         "BlackBerry",
         "WindowsMobile"
     );
-
     if(isset($_GET["FullVersion"])){
         $_SESSION["mobile_template"] = "N";
         return false;
@@ -234,35 +212,24 @@ function check_mobile_2(){
             return true;
         }
     }
-
     return false;
 }
-
 function viewNewMobileTemplate(){
-
     global $APPLICATION;
     global $USER;
-
     $isMobile = check_mobile_2();
-
     $arNewPages = array(
         '/',
     );
-
     if(in_array($APPLICATION->getCurPage(), $arNewPages) && $isMobile)  return true;
 
     foreach ($arNewPages as $page){
-
         if(substr_count($page, '/*')){
-
             $page = str_replace('*', '', $page);
-
             $match = preg_match("($page)", $APPLICATION->getCurPage(), $matches, PREG_OFFSET_CAPTURE);
-
             if($match && $isMobile){
                 return true;
             }
-
         }
     }
 }
