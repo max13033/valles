@@ -1,4 +1,6 @@
-<?ini_set("memory_limit", "1024M"); define("BX_CRONTAB_SUPPORT", true);?><?define("BX_CRONTAB_SUPPORT", true);?><?define("BX_CRONTAB_SUPPORT", true);?><?
+<?
+ini_set("memory_limit", "1024M"); 
+// define("BX_CRONTAB_SUPPORT", true);
 define("BX_USE_MYSQLI", true); 
 define("DBPersistent", false);
 $DBType = "mysql";
