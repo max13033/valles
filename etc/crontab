@@ -14,6 +14,6 @@ MAILTO=root
 # *  *  *  *  * user-name  command to be executed
 
 
-* * * * * bitrix test -f /home/bitrix/www/bitrix/modules/main/tools/cron_events.php && { /usr/bin/php -d sendmail_path="msmtp -t -i -a default" -f /home/bitrix/www/bitrix/modules/main/tools/cron_events.php; } >/dev/null 2>&1
+*/2 * * * * bitrix /usr/bin/php -f /home/bitrix/www/bitrix/php_interface/cron_events.php
 
 
