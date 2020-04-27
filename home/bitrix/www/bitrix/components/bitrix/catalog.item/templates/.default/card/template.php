@@ -166,7 +166,12 @@ use \Bitrix\Main\Localization\Loc;
 									);
 								}
 								else{
+									if($price['PRINT_RATIO_PRICE']=='0 руб.'){
+										echo 'По запросу';
+									}
+									else{ 
 										echo $price['PRINT_RATIO_PRICE'];
+									}
 								}
 							}
 							?>
