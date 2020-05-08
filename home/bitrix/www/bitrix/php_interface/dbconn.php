@@ -30,4 +30,6 @@ define("BX_TEMPORARY_FILES_DIRECTORY", "/home/bitrix/tmp/www");
 define("BX_DISABLE_INDEX_PAGE", true);
 define("BX_COMPOSITE_DEBUG", true);
 define("LOG_FILENAME", $_SERVER["DOCUMENT_ROOT"]."/log.txt");
+
+@set_time_limit(php_sapi_name() == "cli" ? 600 : 60);
 ?>

@@ -14,4 +14,6 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/main/include/prolog_before.ph
 CAgent::CheckAgents();  
 define('BX_CRONTAB', true);  
 CAgent::CheckAgents();  
+require($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/main/tools/backup.php');
+CMain::FinalActions();
 ?>

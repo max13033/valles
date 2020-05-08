@@ -14,6 +14,5 @@ MAILTO=root
 # *  *  *  *  * user-name  command to be executed
 
 
-*/2 * * * * bitrix /usr/bin/php -f /home/bitrix/www/bitrix/php_interface/cron_events.php
-
-
+*/5 * * * * bitrix nice /usr/bin/php -f /home/bitrix/www/bitrix/php_interface/cron_events.php > /dev/null 2>&1
+#*/2 * * * * bitrix nice /usr/bin/php -f /home/bitrix/www/cron/test.php > /tmp/test_cron.txt 2>&1
