@@ -1,4 +1,6 @@
 #
 # cron tasks for site /home/bitrix/ext_www/test-vallesru.shellbe.ru db=dbtest-vallesru
 #
-* * * * * bitrix test -f /home/bitrix/ext_www/test-vallesru.shellbe.ru/bitrix/modules/main/tools/cron_events.php && { /usr/bin/php -d sendmail_path="msmtp -t -i -a test-vallesru.shellbe.ru" -f /home/bitrix/ext_www/test-vallesru.shellbe.ru/bitrix/modules/main/tools/cron_events.php; } >/dev/null 2>&1
+#* * * * * bitrix test -f /home/bitrix/ext_www/test-vallesru.shellbe.ru/bitrix/modules/main/tools/cron_events.php && { /usr/bin/php -d sendmail_path="msmtp -t -i -a test-vallesru.shellbe.ru" -f /home/bitrix/ext_www/test-vallesru.shellbe.ru/bitrix/modules/main/tools/cron_events.php; } >/dev/null 2>&1
+
+#*/2 * * * * bitrix /usr/bin/php -f /home/bitrix/www/bitrix/php_interface/cron_events.php
