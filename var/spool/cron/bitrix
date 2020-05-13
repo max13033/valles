@@ -16,7 +16,7 @@ MAILTO=root
 */2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/128094_yandex.market.callagent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 */2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/07_main.submitdata.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 */2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/49689_subscribe.execute.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
-*/2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/51496_techart.currencyupdater.updatecurrencyrates.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
+*/2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/51496_techart.currencyupdater.updatecurrencyrates.php > /home/bitrix/www/cron/log_from_cron2.txt 2>&1
 ########*/2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/127886_sale.preparedata.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 */2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/4053_suppotr.agentfunction.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 */2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/125975_socialservices.getteitmessages.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
@@ -34,14 +34,11 @@ MAILTO=root
 # 15 min
 */15 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/128097_calendar.renewwatchchannels.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 
-
-*/15 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/127886_sale.preparedata.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
-
-
 # 30 min
 15,45 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/47025_security.cleanupagent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 
 # 1 hour
+05 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/127886_sale.preparedata.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 9 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/03_main.deleteoldcaptcha.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 15 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/33_seo.updateagent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 21 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/35_seo.checkquantityagent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
