@@ -1,0 +1,5 @@
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=root
+
+#*/10 * * * * /usr/bin/php -f /home/bitrix/www/bitrix/php_interface/cron_events.php > /tmp/cron_log.txt 2>&1
