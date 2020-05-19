@@ -6,11 +6,13 @@ MAILTO=root
 
 #* * * * * nice /usr/bin/php -f /home/bitrix/www/cron/landing.php > /tmp/cron_landing.txt 2>&1
 
-# backup
+#	backup
 00 3 * * * nice /usr/bin/php -f /home/bitrix/www/cron/backup.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 
-# 2 minutes
+#	reindexall
+#25 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/reindexall.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 
+# 2 minutes
 */2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/128092_yandex.market.callagent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 */2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/128093_yandex.market.callagent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 */2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/128094_yandex.market.callagent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1

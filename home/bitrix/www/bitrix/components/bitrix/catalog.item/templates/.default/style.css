@@ -1,6 +1,6 @@
 .product-item-container { position: relative; }
 
-.product-item-container.hover { z-index: 100; }	/* 17	*/
+.product-item-container.hover { z-index: 10000; }	/* 17	*/
 
 .product-item {
 	display: block;
