@@ -23,6 +23,8 @@ MAILTO=root
 */2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/4053_suppotr.agentfunction.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 */2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/125975_socialservices.getteitmessages.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 */2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/125973_socialservices.sendsocialservicesmessages.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
+*/2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/128299_yandex.market.callagent1-4.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
+*/2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/128677_calendar.renewwatchchannels.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 
 # 4 minutes
 */4 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/44_pull.checkonlinechannel.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
