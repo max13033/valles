@@ -56,7 +56,8 @@ MAILTO=root
 00 0,2,4,6,8,10,12,14,16,18,20,22 * * * nice /usr/bin/php -f /home/bitrix/www/cron/20_sale.agentcheckrecurring.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 30 0,2,4,6,8,10,12,14,16,18,20,22 * * * nice /usr/bin/php -f /home/bitrix/www/cron/4041_statistic.cleanupsessiondata.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 00 1,3,5,7,9,11,13,15,17,19,21,23 * * * nice /usr/bin/php -f /home/bitrix/www/cron/4073_advertising.sendinfo.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
-30 1,3,5,7,9,11,13,15,17,19,21,23 * * * nice /usr/bin/php -f /home/bitrix/www/cron/4073_advertising.sendinfo.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
+30 1,3,5,7,9,11,13,15,17,19,21,23 * * * nice /usr/bin/php -f /home/bitrix/www/cron/4076_landing.clearrecycle.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
+
 
 # 8 hours
 * */8 * * * nice /usr/bin/php -f /home/bitrix/www/cron/32426_sale.deleteoldagent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
@@ -77,7 +78,7 @@ MAILTO=root
 00 00 * * * nice /usr/bin/php -f /home/bitrix/www/cron/12_messageservice.cleanupagent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 00 2 * * * nice /usr/bin/php -f /home/bitrix/www/cron/16_rest.getnumupdates.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 00 2 * * * nice /usr/bin/php -f /home/bitrix/www/cron/17_rest.cleanprocessagent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
-00 2 * * * nice /usr/bin/php -f /home/bitrix/www/cron/22_.sale.clearviewed.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
+00 2 * * * nice /usr/bin/php -f /home/bitrix/www/cron/22_sale.clearviewed.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 00 1 * * * nice /usr/bin/php -f /home/bitrix/www/cron/125974_socialservices.cleanup.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 15 2 * * * nice /usr/bin/php -f /home/bitrix/www/cron/26_search.cleanupagent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 15 2 * * * nice /usr/bin/php -f /home/bitrix/www/cron/27_search.cleanupagent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1

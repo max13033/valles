@@ -12,7 +12,6 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/main/include/prolog_before.ph
 @ignore_user_abort(true);
 
 \Bitrix\Main\Loader::includeModule('yandex.market');
-//	use \Yandex\Market\Export\Run;
 
 try{\Yandex\Market\Export\Run\Agent::callAgent('refresh', array ( 0 => 4, ));}
 

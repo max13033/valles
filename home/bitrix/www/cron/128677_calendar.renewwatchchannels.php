@@ -12,7 +12,6 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/main/include/prolog_before.ph
 @ignore_user_abort(true);
 
 \Bitrix\Main\Loader::includeModule('calendar');
-// use \Bitrix\Calendar\Sync;
 
 try{\Bitrix\Calendar\Sync\GoogleApiPush::renewWatchChannels();}
 

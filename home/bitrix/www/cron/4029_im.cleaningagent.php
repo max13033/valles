@@ -13,7 +13,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/main/include/prolog_before.ph
 
 \Bitrix\Main\Loader::includeModule('im');
 
-try{\Bitrix\Im\Disk\No\RelationPermission::cleaningAgent();}
+try{\Bitrix\Im\Disk\NoRelationPermission::cleaningAgent();}
 
 catch(Error $err){file_put_contents('/home/bitrix/www/cron/cron_log.txt', strval(date("Y.m.d H:i"))." not OK ".__FILE__." ".$err."\r\n", FILE_APPEND);}
 
