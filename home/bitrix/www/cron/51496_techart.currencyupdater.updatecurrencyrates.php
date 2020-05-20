@@ -11,7 +11,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/main/include/prolog_before.ph
 @set_time_limit(0);
 @ignore_user_abort(true);
 
-\Bitrix\Main\Loader::includeModule('techart.currencyupdater	');
+\Bitrix\Main\Loader::includeModule('techart.currencyupdater');
 
 try{CCurrencyRatesUpdater::UpdateCurrencyRates();}
 
