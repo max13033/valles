@@ -13,10 +13,10 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/main/include/prolog_before.ph
 
 \Bitrix\Main\Loader::includeModule('sale');
 
-try{\Sale\Handlers\Delivery\Additional\RusPost\Reliability\Service::prepareData(39, 3);}
+try{\Sale\Handlers\Delivery\Additional\RusPost\Reliability\Service::prepareDataCustom(39, 3);}
 
-catch(Error $err){file_put_contents('/home/bitrix/www/cron/cron_log.txt', strval(date("Y.m.d H:i"))." not OK ".__FILE__." ".$err."\r\n", FILE_APPEND);}
+catch(Error $err){file_put_contents('/home/bitrix/www/cron/cron_log_'.strval(date("Y-m-d")).'.txt', strval(date("Y.m.d H:i"))." not OK ".__FILE__." ".$err."\r\n", FILE_APPEND);}
 
-if(!$err){file_put_contents('/home/bitrix/www/cron/cron_log.txt', strval(date("Y.m.d H:i"))." OK ".__FILE__."\r\n", FILE_APPEND);}
+if(!$err){file_put_contents('/home/bitrix/www/cron/cron_log_'.strval(date("Y-m-d")).'.txt', strval(date("Y.m.d H:i"))." OK ".__FILE__."\r\n", FILE_APPEND);}
 
 ?>

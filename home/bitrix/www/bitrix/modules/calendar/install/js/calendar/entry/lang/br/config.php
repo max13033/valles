@@ -1,0 +1,4 @@
+<?
+$MESS["CALENDAR_DEFAULT_ENTRY_NAME"] = "Novo Evento";
+$MESS["CALENDAR_EVENT"] = "Evento";
+?>

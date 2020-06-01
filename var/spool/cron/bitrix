@@ -4,10 +4,11 @@ MAILTO=root
 
 #*/15 * * * * nice /usr/bin/php -f /home/bitrix/www/bitrix/php_interface/cron_events.php > /tmp/log_from_cron.txt 2>&1
 
-#* * * * * nice /usr/bin/php -f /home/bitrix/www/cron/landing.php > /tmp/cron_landing.txt 2>&1
-
 #	backup
-00 3 * * * nice /usr/bin/php -f /home/bitrix/www/cron/backup.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
+#00 3 * * * nice /usr/bin/php -f /home/bitrix/www/cron/backup.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
+
+#   del old log
+00 00 * * * nice /usr/bin/php -f /home/bitrix/www/cron/del_old_log.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 
 #	reindexall
 #25 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/reindexall.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
@@ -19,8 +20,7 @@ MAILTO=root
 */2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/128094_yandex.market.callagent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 */2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/07_main.submitdata.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 */2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/49689_subscribe.execute.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
-*/2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/51496_techart.currencyupdater.updatecurrencyrates.php > /home/bitrix/www/cron/log_from_cron2.txt 2>&1
-########*/2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/127886_sale.preparedata.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
+*/2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/51496_techart.currencyupdater.updatecurrencyrates.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 */2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/4053_suppotr.agentfunction.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 */2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/125975_socialservices.getteitmessages.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 */2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/125973_socialservices.sendsocialservicesmessages.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
@@ -36,14 +36,11 @@ MAILTO=root
 4,14,24,34,44,54 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/4012_im.mailmessageagent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 6,16,26,36,46,56 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/4079_socialnetwork.sendeventagent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 
-# 15 min
-*/15 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/128097_calendar.renewwatchchannels.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
-
 # 30 min
 15,45 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/47025_security.cleanupagent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 
 # 1 hour
-05 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/127886_sale.preparedata.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
+########05 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/127886_sale.preparedata.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 9 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/03_main.deleteoldcaptcha.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 15 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/33_seo.updateagent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 21 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/35_seo.checkquantityagent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
@@ -68,6 +65,7 @@ MAILTO=root
 * 4,16 * * * nice /usr/bin/php -f /home/bitrix/www/cron/4019_im.removetmpfilegent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 
 # 1 day 
+35 5 * * * nice /usr/bin/php -f /home/bitrix/www/cron/127886_sale.preparedata.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 00 2 * * * nice /usr/bin/php -f /home/bitrix/www/cron/01_main.cleanupagent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 00 2 * * * nice /usr/bin/php -f /home/bitrix/www/cron/02_main.cleanuphitauthagent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 45 1 * * * nice /usr/bin/php -f /home/bitrix/www/cron/04_main.cleanupold.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
