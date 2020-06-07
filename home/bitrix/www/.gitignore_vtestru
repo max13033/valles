@@ -1,0 +1,93 @@
+###################################
+###   COMMON IGNORE    ###
+###################################
+
+
+### uncomment to exclude bitrix public-files
+#/*
+
+### technical files
+#/.htaccess
+/sitemap*.xml
+#/robots.txt
+/web.config
+/.htsecure
+/yandex_*.html
+
+### test files
+/test/
+/test.php
+
+log*.txt
+
+### bitrix uploads
+/upload/*
+
+### urlrewrite chanches too often. Ignore and fixing changes in copy urlrewrite_.php manualy.
+#/urlrewrite.php
+
+### gitignore and bitrix root include
+!/.gitignore
+!/bitrix
+
+### bitrix common rules
+#	/bitrix/*.*
+#	/bitrix/*/*
+!/bitrix/js/
+/bitrix/js/*
+!/bitrix/php_interface/*
+/bitrix/php_interface/dbconn.php
+/bitrix/themes/
+!/bitrix/tools/
+/bitrix/tools/*
+/bitrix/modules/updater*.*
+
+### indexing main module
+!/bitrix/modules/main
+### indexing iblock module
+!/bitrix/modules/iblock
+!/bitrix/components/aspro
+
+### backup files from some editors
+*.*~
+
+### indexing all external modules and ignore bitrix
+#	!/bitrix/modules/[a-zA-Z0-9]*.*/
+#	/bitrix/modules/bitrix.*
+#	!/bitrix/components/[a-zA-Z0-9]*.*/
+
+### from old .gitignore
+*.gz
+*.zip
+web.config
+/*.xml
+/test*.php
+*.log
+yandex_*.html
+yandex_*.txt
+bitrix/php_interface/include/catalog_export/logs/
+bitrix/php_interface/include/catalog_import/logs/
+/desktop_app
+*.xlsx
+*.xls
+*.xml
+*.xml.tmp
+
+/.gitignore
+/upload/
+/bitrix/modules/shs.parser/include/*.txt
+/images/
+/big.php
+/bitrix/backup/
+/bitrix/html_pages/
+/bitrix/cache/
+/bitrix/managed_cache/
+/bitix/stack_cache/
+/_timebacks/
+/B24_files/
+/mobile/
+/Mobile/
+/New_Folder/
+/novyy-poisk-tovarov/
+/phpmyadmin/
+/test/
