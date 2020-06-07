@@ -12,6 +12,7 @@ MAILTO=root
 
 #	reindexall
 #25 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/reindexall.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
+00 21 * * * nice /usr/bin/php -f /home/bitrix/www/cron/iblockManualReindex.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 
 # 2 minutes
 */2 * * * * nice /usr/bin/php -f /home/bitrix/www/cron/128074_yandex.market.callagent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
@@ -65,7 +66,7 @@ MAILTO=root
 * 4,16 * * * nice /usr/bin/php -f /home/bitrix/www/cron/4019_im.removetmpfilegent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 
 # 1 day 
-35 5 * * * nice /usr/bin/php -f /home/bitrix/www/cron/127886_sale.preparedata.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
+00 06 * * * nice /usr/bin/php -f /home/bitrix/www/cron/127886_sale.preparedata.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 00 2 * * * nice /usr/bin/php -f /home/bitrix/www/cron/01_main.cleanupagent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 00 2 * * * nice /usr/bin/php -f /home/bitrix/www/cron/02_main.cleanuphitauthagent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 45 1 * * * nice /usr/bin/php -f /home/bitrix/www/cron/04_main.cleanupold.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
@@ -111,6 +112,7 @@ MAILTO=root
 00 2 * * * nice /usr/bin/php -f /home/bitrix/www/cron/125416_yandex.market.callagent.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 00 2 * * * nice /usr/bin/php -f /home/bitrix/www/cron/4074_advertising.cleanupdynamics.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 00 2 * * * nice /usr/bin/php -f /home/bitrix/www/cron/85747_sale.cleanproductreservedquantity.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1
+00 07 * * * nice /usr/bin/php -f /home/bitrix/www/bitrix/modules/webdebug.antirutin/cron.php profile=2 > /home/bitrix/www/cron/log_from_cron.txt 2>&1
 
 # 4 days
 00 11 */4 * * nice /usr/bin/php -f /home/bitrix/www/cron/1022_sale.refreshproductlist.php > /home/bitrix/www/cron/log_from_cron.txt 2>&1

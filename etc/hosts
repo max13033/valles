@@ -1,0 +1,11 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4 valles.ru valles.top www.valles.ru www.valles.top
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+
+
+
+
+
+
+# ANSIBLE MANAGED BLOCK sdn07.timeweb.ru; DON'T insert your record after this comment!!!
+79.174.15.34 sdn07.timeweb.ru sdn07.timeweb.ru
+
